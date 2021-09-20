@@ -684,3 +684,185 @@ h4 {
   font-size: 1.5rem;
   font-weight: 400;
 }
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 768px) {
+  /* NAVIGATION */
+  .nav {
+    /* width: 100%; */
+    padding: 0 1rem;
+  }
+
+  .nav__links {
+    display: flex;
+    list-style: none;
+  }
+
+  .nav__item {
+    margin-left: 2rem;
+  }
+
+  .nav__link--btn:link,
+  .nav__link--btn:visited {
+    display: none;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  .section__header {
+    font-size: 3rem;
+  }
+
+  .header__title img {
+    padding-top: 11rem;
+    width: 100%;
+  }
+
+  .features {
+    /* grid-template-columns: 1fr 1fr; */
+    gap: 3rem;
+    margin: 0 4rem;
+  }
+
+  .features__feature {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .features__icon {
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .header {
+    padding: 0 2rem;
+  }
+
+  .header__title {
+    grid-template-columns: 1fr;
+  }
+
+  .header__title img {
+    width: 50%;
+    grid-column: 1 / 1;
+    padding: 0;
+    transform: translateX(50%);
+  }
+
+  .nav {
+    padding: 2rem 6rem;
+  }
+
+  .nav__links {
+    display: flex;
+    list-style: none;
+  }
+
+  .nav__item {
+    margin-left: 1rem;
+  }
+
+  .nav__link:link,
+  .nav__link:visited {
+    font-size: 1rem;
+  }
+
+  .nav__link--btn:link,
+  .nav__link--btn:visited {
+    display: none;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    padding-top: 0;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+
+  .section {
+    padding: 5rem 2rem;
+  }
+
+  .section__header {
+    font-size: 2rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin: 0 4rem;
+  }
+
+  .features__feature {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .features__icon {
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+  }
+
+  .operations__header {
+    font-size: 1.25rem;
+  }
+
+  .operations__content {
+    padding: 2.5rem 4rem 6.5rem 4rem;
+  }
+
+  .operations__icon {
+    height: 5rem;
+    width: 5rem;
+  }
+  .operations__content--active {
+    grid-template-columns: 5rem 1fr;
+    column-gap: 1.5rem;
+  }
+
+  .testimonial__text {
+    font-size: 1.2rem;
+  }
+
+  .slider__btn {
+    height: 4.5rem;
+    width: 4.5rem;
+    font-size: 2.7rem;
+  }
+
+  .dots {
+    bottom: 0;
+  }
+
+  .footer__nav {
+    display: none;
+  }
+}
+
+@media all and (max-width: 320px) {
+  h1 {
+    font-size: 3rem;
+    padding-top: 0;
+  }
+}
